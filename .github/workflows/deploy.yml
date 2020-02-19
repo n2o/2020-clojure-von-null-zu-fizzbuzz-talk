@@ -24,7 +24,6 @@ jobs:
       - name: Copy artifacts
         run: cp target/public/cljs-out/dev-main.js resources/public/cljs-out
       - name: Deploy to Github-Pages
-          if: success()
           uses: crazy-max/ghaction-github-pages@v1
           with:
             target_branch: gh-pages
