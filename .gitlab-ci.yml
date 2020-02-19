@@ -1,0 +1,14 @@
+pages:
+  image: clojure:openjdk-14-tools-deps-alpine
+  stage: deploy
+  before_script:
+    - apk --no-cache add make yarn bash
+    - rm -rf public
+    - mkdir public
+  script:
+    - make web
+  after_script:
+    - mv resources/public/* public/
+  artifacts:
+    paths:
+      - public
