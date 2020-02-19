@@ -101,11 +101,18 @@
             :style "height: 1em; vertical-align: middle; padding-right: .25em"}]
      [:a {:href "https://github.com/clojuredus/fizzbuzz-einsteiger"}
       "clojuredus/fizzbuzz-einsteiger"]]
+
     [:p "Code aus diesem Talk:" [:br]
      [:img {:src "img/github.svg"
             :style "height: 1em; vertical-align: middle; padding-right: .25em"}]
      [:a {:href "https://github.com/n2o/2020-clojure-von-null-zu-fizzbuzz-talk"}
-      "n2o/2020-clojure-von-null-zu-fizzbuzz-talk"]]))
+      "n2o/2020-clojure-von-null-zu-fizzbuzz-talk"]]
+
+    [:p "Aufzeichnung dieses Talks:" [:br]
+     [:img {:src "img/youtube.svg"
+            :style "height: 2em; vertical-align: middle;"}]
+     [:a {:href "https://youtu.be/1nprvnKYXr4"}
+      "November 2019"]]))
 
 (defn all
   "Add here all slides you want to see in your presentation."
