@@ -27,7 +27,7 @@
 (def 🎂 '🎂)
 (def 🍰 '🍰)
 
-(def 👸 '👸)
+(def 🏔 '🏔)
 (def 🐉 '🐉)
 
 (defn 🔪
@@ -37,7 +37,7 @@
     🍈 '🍉
     🎂 '🍰
     🐮 '🥩
-    🐉 '👸
+    🐉 '🏔
     🦄 '🌈
     x))
 
@@ -121,20 +121,11 @@
   (square3 4)
 
   🔥
-  (🔥 🌽)
-  (🔥 🥚)
-  (🔥 🐷)
-  (🔥 🐮)
+
+
 
   🔪
-  (🔥 (🔪 🐮))
-  (🔪 🎂)
-  (🔪 🐉)
-  (🔪 🦄)
 
-  (def foo! [],,,)
-
-  (def foo? [])
 
 
 
@@ -171,17 +162,22 @@
 
 
   ;; Higher Order Functions
-  ;; Funktionen, die Funktionen als Parameter bekommen
+  ;; Funktionen, die Funktionen als Parameter bekommen oder eine Funktion zurückgeben
   map
 
   (map inc [1 2 3])
-  ;; => [(inc 1) (inc 2) (inc 3)]
+  ;; => ((inc 1) (inc 2) (inc 3))
 
   (reduce + [1 2 3 4])
-  ;; => (((1 + 2) + 3) + 4)
+  ;; => (+ (+ (+ 1 2) 3) 4)
+
+
+  ;; There is a function for it...
 
   (filter
     (fn [n] (= 0 (mod n 2)))
     (range 1 20))
+
+
 
   [])
