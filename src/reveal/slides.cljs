@@ -22,7 +22,8 @@
      [:strong "Christian Meter"]]
     [:small
      "Institut für Informatik" [:br]
-     "Heinrich-Heine-Universität Düsseldorf" [:br] [:br]
+     "Heinrich-Heine-Universität Düsseldorf" [:br]
+     "19.02.2020" [:br] [:br]
      "meter@hhu.de" [:br]
      "@cmeter_ / @clojure_dus"]]])
 
@@ -33,6 +34,24 @@
     [:p
      [:a {:href "http://clojure-duesseldorf.de"}
       "clojure-duesseldorf.de"]]))
+
+(def slide-next
+  (section-with-title
+    "Was kommt als nächstes?"
+    [:p [:strong "Lightning Talks"] [:br]
+     "am 26.03.2020"]
+
+    [:div.row
+     [:div.col-6
+      [:p "Themenideen:"]
+      [:p "👩‍🏫 Data-Science in Clojure"]
+      [:p "🕵️‍♂️ Statische Codeanalyse"]
+      [:p "🐣 Anfängererfahrungen"]
+      [:p "🔥 Scala vs. Clojure"]]
+     [:div.col-6
+      [:p "Wir suchen noch Speaker!"]
+      [:p "Sprecht uns einfach an, wir coachen auch Newcomer 🚀"]
+      [:p "Jeder Talk dauert ca. 10 Minuten"]]]))
 
 (def slide-2
   (section-with-title
@@ -85,14 +104,15 @@
     [:p "Code aus diesem Talk:" [:br]
      [:img {:src "img/github.svg"
             :style "height: 1em; vertical-align: middle; padding-right: .25em"}]
-     [:a {:href "https://github.com/n2o/clojure-von-null-zu-fizzbuzz-talk"}
-      "n2o/clojure-von-null-zu-fizzbuzz-talk"]]))
+     [:a {:href "https://github.com/n2o/2020-clojure-von-null-zu-fizzbuzz-talk"}
+      "n2o/2020-clojure-von-null-zu-fizzbuzz-talk"]]))
 
 (defn all
   "Add here all slides you want to see in your presentation."
   []
   [slide-1
    slide-clojuredus
+   slide-next
    slide-2
    slide-history
    slide-usage
