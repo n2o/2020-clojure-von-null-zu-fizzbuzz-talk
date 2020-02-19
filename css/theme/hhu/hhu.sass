@@ -1,0 +1,118 @@
+/**
+ * HHU Theme, based on white theme for reveal.js
+ *
+ * Created by Christian Meter
+ */
+
+@import url(font/source-sans-pro/source-sans-pro.css)
+@import "colors"
+@import "hhu_general"
+
+/*********************************************
+ * GLOBAL STYLES
+ ********************************************
+// Show small footer on all pages
+body
+  background: #fff url('img/background_small_stripe.svg') no-repeat fixed bottom
+  background-size: 100% auto
+
+// Show big footer on index page
+html.footer div.slide-background.present
+  background: #fff url('img/background_stripe.svg') no-repeat fixed bottom
+  background-size: 100% auto
+  z-index: 1000
+
+// Place logo
+#logo
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1000
+
+  object
+    max-width: 300px
+
+  @media screen and (max-width: 1250px)
+    object
+      max-width: 150px
+  @media screen and (max-width: 650px)
+    object
+      max-width: 100px
+
+header, span.header, body > div > div.slides > section.present > span
+  position: absolute
+  text-align: center
+  top: 41px
+  left: 1%
+  right: 1%
+  z-index: 500
+  color: $hhublue
+
+@media screen and (max-width: 1250px)
+  header, span.header, body > div > div.slides > section.present > span
+    top: 25px
+    left: 25px
+
+@media screen and (max-width: 650px)
+  header, span.header, body > div > div.slides > section.present > span
+    height: 1em
+
+header span:after, span.header:after
+  font-size: 1.5em
+  line-height: 2em
+
+@media screen and (max-width: 1250px)
+  header span:after, span.header:after
+    font-size: 1em
+    line-height: 1em
+
+@media screen and (max-width: 650px)
+  header span:after, span.header:after
+    font-size: 0.5em
+    line-height: 0.5em
+
+.slide-number
+  bottom: 5em !important
+
+small
+  vertical-align: middle !important
+
+// Images
+img
+  border: 0
+
+img.inline
+  max-width: 2em
+  margin: 0 !important
+  vertical-align: middle
+
+a
+  text-decoration: underline !important
+
+.text-left
+  text-align: left
+
+.spacer
+  height: 2em
+
+.spacer-small
+  height: 0.5em
+
+code
+  padding: 1rem !important
+
+/*********************************************
+ * PROGRESS BAR
+ ********************************************
+.reveal .progress
+  background: rgba(0, 0, 0, 0.2)
+
+.reveal .progress span
+  //background: $hhublue
+  background: #fff
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+
+.highlight
+  color: $hhublue !important
