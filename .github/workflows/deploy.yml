@@ -23,8 +23,11 @@ jobs:
         run: clojure -A:fig/simple
       - name: Copy artifacts
         run: cp target/public/cljs-out/dev-main.js resources/public/cljs-out
-      - name: Deploy to GH Pages
-        uses: maxheld83/ghpages@v0.2.1
-        env:
-          BUILD_DIR: "resources/public/"
-        secrets: ["GH_PAT"]
+      - name: Deploy to Github-Pages
+          if: success()
+          uses: crazy-max/ghaction-github-pages@v1
+          with:
+            target_branch: gh-pages
+            build_dir: resources/public
+          env:
+            GITHUB_PAT: ${{ secrets.GH_PAT }}
