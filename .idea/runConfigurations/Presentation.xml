@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Presentation" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-    <module name="clojure-coding-students" />
+    <module name="2020-clojure-einsteiger-von-null-zu-fizzbuzz" />
     <setting name="replType" value="CLOJURE_MAIN" />
     <setting name="execution" value="DEPS" />
     <setting name="jvmArgs" value="" />
